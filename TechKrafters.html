@@ -1,0 +1,220 @@
+<html>
+<head>
+<title>Demo Website Layout</title>
+
+<style>
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+ 
+
+nav{
+    flex: 2;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    
+}
+nav ul li{
+    display: inline-block;
+    padding: 15px;
+    list-style-type: none;
+}
+.container{
+    max-width: 1300px;
+    margin:auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.column1{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.column1 img{
+    max-width: 50%;
+    padding: 50px 0px 160px 150px;
+    box-sizing: content-box;
+}
+.column1 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+a{
+    text-decoration: none;
+}
+.button{
+    display: inline-block;
+    background:  #000000;
+    color: #00e6e6;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition-timing-function: linear;
+}
+.button:hover{
+    background:  #ffffff;
+    color: #000000;
+}
+.header{
+    background:  radial-gradient(#02aab0,#00cdac);
+}
+.header .row{
+     margin-top: 70px;
+}
+.categories{
+    margin: 70px 10px;
+}
+
+
+.footer{
+    background: #000000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 40px 0 20px;
+    }
+    .column-b img{
+    width: 100%;
+    cursor:pointer;
+    filter: grayscale(100%);
+    }
+    .footer .p{
+    color: #8a8a8a;
+    }
+    .logo1 img{
+    cursor:pointer;
+    filter: grayscale(100%);
+    }
+    .logo1 img:hover{
+    filter: grayscale(0);
+    }
+    .footer h3{
+    color: #ffffff;
+    margin-bottom: 20px;
+    }
+    .footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+    }
+    .footer-col-1{
+    flex-basis: 30%;
+    }
+    .footer-col-2{
+    flex-basis: 1%;
+    }
+    .footer-col-2 img{
+    width: 225px;
+    margin-bottom: 20px;
+    }
+    .footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+    }
+    ul{
+    list-style-type: none;
+    }
+    .footer hr{
+    border:none;
+    background: #b5b5b5;
+    height:1px;
+    margin:20px 0;
+    }
+    .copyright{
+    text-align: center;
+    }
+    .menu-icon{
+    width:28px;
+    margin-left: 20px;
+    }
+</style>
+
+</head>
+
+<body>
+    <div class="header">
+            
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                     <img src="D:\WEB DEV\images\main page\THE TECH SHOP-logos_transparent.png" width="125px">
+                </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href=""; style="color: #1a1aff;font-family: 'MuseoModerno', cursive;">Products</a></li>
+                            <li><a href=""; style="color: #1a1aff;font-family: 'MuseoModerno', cursive;">Get to know Us</a></li>
+                            <li><a href=""; style="color: #1a1aff;font-family: 'MuseoModerno', cursive;">Contact</a></li>
+                            <li><a href=""; style="color: #1a1aff;font-family: 'MuseoModerno', cursive;">Account</a></li>
+                        </ul>
+                    </nav>
+                    <img src="D:\WEB DEV\images\main page\shopping-cart.png" width="30px" height="30px">
+                    <img src="D:\WEB DEV\images\menu.png" class="menu-icon" onclick="menutoggle()" width="30px" height="30px">
+            </div>
+                <div class="row">
+                 <div class="column1">
+                     <h1 style="font-family: Pacifico">Give your work the technology it needs with our products</h1>
+                     <p style="font-family: 'MuseoModerno', cursive;">Make this Exclussive Offer yours, Click the button to explore the All new i7 laptops</p>
+                 <a href="" class="button" style="font-family: 'MuseoModerno', cursive;">Explore &#x27A8;</a>
+                 </div>
+                 <div class="column1">
+                    
+                         <img src="D:\WEB DEV\images\main page\i7.png">
+                     </div>
+                    
+                 </div>
+             </div>       
+        </div>
+        </div
+
+
+   <!--footer-->
+   <div class="footer">
+    <div class="container">
+       <div class="row">
+           <div class="footer-col-1">
+                  <h3>Mobile Application Soon to be Accessible<br>through the Play store and Apple Appstore</h3>
+                  <p>The Tech shop's Existance is to fullfil<br>the Technical needs of a normal man at a moderate price </p>
+         </div>
+            <div class="footer-col-2">
+                  <div class="logo1">
+                       <img src="D:\WEB DEV\images\main page\THE TECH SHOP.png ">
+                  </div>
+         </div>
+
+
+
+            <div class="footer-col-3">
+                   <h3 >Useful Links</h3>
+             <ul>
+                <li>Offers and Coupons</li>
+                <li>Blog post</li>
+                <li>affiliate with us</li>
+                <li>Return policy</li>
+                <li>Shipment policy</li>
+             </ul>
+           </div>
+           <div class="footer-col-4">
+                   <h3 >Follow Us</h3>
+             <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+             </ul>
+           </div>
+        </div>
+    <hr>
+    <p class="copyright"> © 2021 The Tech Shop, All rights reserved</p>          
+  </div>
+</div>    
+</body>
+</html>
