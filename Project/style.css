@@ -207,7 +207,13 @@ ul{
 
 @media(max-width:700px){
     .navcover{
-        height: 200px;
+        height: 160px;
+    }
+}
+
+@media(max-width:338px){
+    .navcover{
+        height: 300px;
     }
 }
 
