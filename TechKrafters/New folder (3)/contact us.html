@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+<style>
+*{
+margin:  0;
+	padding: 0;
+	box-sizing: border-box;;
+	
+}
+.cont{
+	background-color: #f0f8ff;
+	width: 65%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 50px;
+	margin-top: auto;
+	border-radius: 30px;
+   
+}
+.header{
+	background:  radial-gradient(#02aab0,#0099ff);
+}
+body{
+	
+	font-family: Kiwi Maru;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+nav{
+	flex: 2;
+	text-align: right;
+}
+nav ul{
+	display: inline-block;
+	list-style-type: none;
+    
+}
+nav ul li{
+	display: inline-block;
+	padding: 15px;
+	list-style-type: none;
+}
+.container{
+	max-width: 1300px;
+	margin:auto;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+a{
+	text-decoration: none;
+}
+
+.form{
+	padding: 50px;
+	text-align: center;
+}
+	.form form input,textarea{
+	width: 100%;
+	margin:3px;
+	padding:5px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid cyan;
+}
+ .form form button{
+    width: 100%;
+	margin:3px;
+	padding:5px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	border-bottom: cyan;
+	color: black;
+  }
+ .form form button:hover{
+      background-color: black;
+      color: cyan;
+  }
+ .form  form input:focus{
+      border-bottom: 4px solid black;
+  }
+  .form h2{
+     font-size: 35px;
+     color: black;
+  }
+  /*--footer--*/
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.container{
+	max-width: 1300px;
+	margin:0;
+	padding-right: 20px;
+	padding-left: 20px;
+	
+}
+.footer{
+	background: #000000;
+	color: #8a8a8a;
+	font-size: 14px;
+	padding: 40px 0 20px;
+}
+.column-b img{
+	width: 100%;
+	cursor:pointer;
+    filter: grayscale(100%);
+}
+.footer .p{
+	color: #8a8a8a;
+}
+
+.footer h3{
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4{
+	min-width: 250px;
+	margin-bottom: 20px;
+}
+.footer-col-1{
+	flex-basis: 30%;
+}
+.footer-col-1 form input{
+	width: 100%;
+	margin:3px;
+	padding:5px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid cyan;
+}
+.footer-col-1 form button{
+    width: 100%;
+	margin:3px;
+	padding:5px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	border-bottom: cyan;
+	color: black;
+  }
+  .footer-col-1 form button:hover{
+      background-color: cyan;
+  }
+  .footer-col-1 form input:focus{
+      border-bottom: 4px solid cyan;
+  }
+
+.footer-col-2{
+	flex-basis: 1%;
+
+}
+
+.footer-col-2 img{
+	width: 225px;
+	margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+	flex-basis: 12%;
+	text-align: center;
+}
+ul{
+	list-style-type: none;
+}
+.footer hr{
+	border:none;
+	background: #b5b5b5;
+	height:1px;
+	margin:20px 0; 
+}
+.copyright{
+	text-align: center;
+}
+.menu-icon{
+	width:28px;
+	margin-left: 20px;
+	display: none;
+}
+
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		
+	
+     <div class="container">
+		    <div class="navbar">
+		        <div class="logo">
+			         <a href="mainindex.html"><img src="D:\techKrafter-logos_black.png" width="120px"></a>
+		        </div>
+		            <nav>
+			           
+		            </nav>
+		          </div>
+	</div>	          
+<div class="cont">
+	<div class="form">
+	
+	<h2>CONTACT US:</h2>
+	<form style="padding-top: 40px" onsubmit="return validation()" name="submit-googlesheet" method="POST">
+	
+	<input type="name" name="Name" placeholder="Name" required><br>
+	<span id="errorname" style="color: red; font-size: 10px;"></span>
+
+	<input type="email" name="Email" placeholder="Email ID" required><br>
+	<span id="erroremail" style="color: red; font-size: 10px;"></span>
+
+	<input type="Number" name="Number" placeholder="Number" required><br>
+	<span id="errornumber" style="color: red; font-size: 10px;"></span>
+
+	<textarea type="message" name="Message" placeholder="Your message please...." required style="height: 150px"></textarea><br>
+	<span id="errormessage" style="color: red; font-size: 10px;"></span>
+
+	<button type="submit">Submit</button>
+
+</form>
+</div>
+</div>
+
+
+ <!--footer-->
+   <div class="footer">
+   	    <div class="container">
+   		   <div class="row">
+   		   	<div class="footer-col-1">
+   		  	       <form>
+   		  	       	<h2 style="font-size: 30px;">NOTIFIED IMMEDIATELY ONCE AN UPDATE...SUBSCRIBE OUR NEWSLETTER</h2>
+   		  	       	<input type="email" name="" placeholder="Email ID">
+   		  	       	<button type="Submit">Subscribe</button>
+   		  	       </form>
+                </div>
+   		        <div class="footer-col-2">
+   		  	        <div class="logo1">
+   		  	 	        <img src="D:techKrafter-logos_transparent.png ">
+   		  	        </div>
+                </div>
+
+   		        <div class="footer-col-3">
+   		  	         <h3 >Useful Links</h3>
+                    <ul>
+            	       <li>Offers and Coupons</li>
+            	       <li>Blog post</li>
+            	       <li>affiliate with us</li>
+            	       <li>Return policy</li>
+            	       <li>Shipment policy</li>
+                    </ul>
+   		       </div>
+             
+   		       <div class="footer-col-4">
+   		  	         <h3 >Follow Us</h3>
+                    <ul>
+            	       <li>Youtube</li>
+            	       <li>github</li>
+            	       <li>Twitter</li>
+            	    </ul>
+   		       </div>
+   		    </div>
+           <hr>
+           <p class="copyright"> © 2021 techKrafters, All rights reserved</p>      	
+     	</div>
+    </div>
+    
+
+
+<script type="text/javascript">
+	function validation(){
+		var username = document.getElementById('name').value;
+		var email = document.getElementById('email').value;
+		var number = document.getElementById('Number').value;
+	   var message =document.getElementById('message').value;
+
+	   var namecheck = /^[A-za-z ]{3,30}$/;
+	   var emailcheck = /^[A-za-z0-9._]{3,}@[A-za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+	   var numbercheck = /^[6789][0-9+-]{10}$/;
+	   var messagecheck = /^[A-za-z0-9_-.,?""'';:&*(){}%@!$^+/]{10,}$/;
+
+	   if (namecheck.test(username)) {
+	   	document.getElementById('errorname').innerHTMl="";
+	    }
+       else{
+       	document.getElementById('errorname').innerHTMl="INVALID INPUT";
+       	return false;
+       }
+       if (emailcheck.test(email)) {
+	   	document.getElementById('erroremail').innerHTMl="";
+	    }
+       else{
+       	document.getElementById('erroremail').innerHTMl="INVALID INPUT";
+       	return false;
+       }
+       if (numbercheck.test(number)) {
+	   	document.getElementById('errornumber').innerHTMl="";
+	    }
+       else{
+       	document.getElementById('errornumber').innerHTMl="INVALID INPUT";
+       	return false;
+       }
+       if (messagecheck.test(message)) {
+	   	document.getElementById('errormessage').innerHTMl="";
+	    }
+       else{
+       	document.getElementById('errormessage').innerHTMl="INVALID INPUT";
+       	return false;
+       }
+	}
+</script>
+
+<script>
+	 const scriptURL = 'https://script.google.com/macros/s/AKfycbzgK37_B4Chx66Omxr2GPylOOpROGyLEE1GuhRfX27LZrKle8yEAaXthJK1CSF-WpjAbw/exec'
+            const form = document.forms['submit-googlesheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will be in touch Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+</script>
+
+</body>
+</html>
